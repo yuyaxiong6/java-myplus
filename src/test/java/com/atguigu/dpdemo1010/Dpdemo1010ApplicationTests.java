@@ -16,7 +16,8 @@ public  class Dpdemo1010ApplicationTests {
     @Test
     public  void selectall() {
         List<User> users = userMapper.selectList(null);
-        System.out.println(users);
+        users.forEach(System.out::println);
+
     }
 
 }
